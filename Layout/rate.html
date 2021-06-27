@@ -1,0 +1,97 @@
+<!-- Start Rating  -->
+<div class="rating-page">
+  <div class="container">
+    <form role="form" id="frmRate" action="" method="POST">
+      <div class="row">
+        <div class="col-lg-5 col-md-12 col-sm-12 col-12">
+          <fieldset class="stars">
+            <div class="rateText">
+              <h2>Rating Us Here</h2>
+            </div>
+            <input
+              type="radio"
+              name="stars"
+              id="star1"
+              value="5 star"
+              ontouchstart="ontouchstart"
+              required
+            />
+            <label class="fa fa-star" for="star1"></label>
+            <input
+              type="radio"
+              name="stars"
+              id="star2"
+              value="4 star"
+              ontouchstart="ontouchstart"
+              required
+            />
+            <label class="fa fa-star" for="star2"></label>
+            <input
+              type="radio"
+              name="stars"
+              id="star3"
+              value="3 star"
+              ontouchstart="ontouchstart"
+            />
+            <label class="fa fa-star" for="star3"></label>
+            <input
+              type="radio"
+              name="stars"
+              id="star4"
+              value="2 star"
+              ontouchstart="ontouchstart"
+            />
+            <label class="fa fa-star" for="star4"></label>
+            <input
+              type="radio"
+              name="stars"
+              id="star5"
+              value="1 star"
+              ontouchstart="ontouchstart"
+            />
+            <label class="fa fa-star" for="star5"></label>
+            <input type="radio" name="stars" id="star-reset" />
+            <label class="reset" for="star-reset">reset</label>
+            <figure class="face">
+              <i></i><i></i>
+              <u>
+                <div class="cover"></div>
+              </u>
+            </figure>
+          </fieldset>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12 col-12 inputs">
+          <input
+            type="text"
+            class="form-control form-control-user"
+            name="name"
+            id="name"
+            placeholder="Name"
+            required
+          />
+          <input
+            type="email"
+            class="form-control form-control-user"
+            name="email"
+            id="email"
+            placeholder="Email Address"
+            required
+          />
+          <textarea
+            class="form-control form-control-lg"
+            id="comment-content"
+            name="content"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <input
+            type="submit"
+            id="send-message"
+            class="sub btn btn-primary btn-lg btn-block"
+            value="Rate Us"
+          />
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

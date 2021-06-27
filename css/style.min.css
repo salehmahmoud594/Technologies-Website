@@ -1,0 +1,574 @@
+body {
+  padding-top: 70px;
+  overflow: hidden;
+}
+.lead,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Droid Sans", sans-serif;
+}
+.h1{
+  font-family: Raleway,sans-serif;
+}
+/*   Starting Overriding Bootstrap    */
+
+/*Nav*/
+
+.navbar {
+  min-height: 75px;
+}
+/* Active Link */
+
+.nav-link:hover {
+  background-color: #2d2d2d;
+  color: #fff;
+}
+/* Nav Link */
+
+.bg-dark {
+  background-color: #fff !important;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: #bbb;
+  padding: 1.5rem 1rem;
+  font-size: 17px;
+}
+/* Logo Link  */
+
+.navbar-dark .navbar-brand {
+  color: #bbb;
+  font-size: 30px;
+  line-height: 30px;
+}
+/* Dropdown Menu  */
+
+.dropdown-menu {
+  background-color: #333;
+  min-width: 200px;
+}
+.dropdown-item {
+  color: #fff;
+  padding: 9px 20px;
+  transition: padding 0.5s ease;
+  -webkit-transition: padding 0.5s ease;
+  -moz-transition: padding 0.5s ease;
+  -o-transition: padding 0.5s ease;
+}
+.dropdown-item:focus,
+.dropdown-item:hover {
+  color: #fff;
+  padding-left: 30px;
+}
+.navbar-dark .navbar-toggler {
+  color: rgba(30, 104, 136, 1);
+  border-color: rgba(30, 104, 136, 1);
+}
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(30,104,136,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+/* Carousel */
+
+.carousel-caption {
+  bottom: 100px;
+  background: rgba(3, 3, 3, 0.3);
+  padding-right: 30px;
+  padding-left: 30px;
+}
+.carousel-indicators {
+  bottom: 0;
+}
+.carousel-indicators li {
+  width: 20px;
+  height: 20px;
+  opacity: 0.4;
+  border: 2px solid #eee;
+  border-radius: 25px;
+}
+.carousel-inner > .carousel-item > img {
+  width: 100%;
+  height: 550px;
+}
+
+/**********************   End Overriding Bootstrap    ********************** */
+/*Start Cover Section*/
+
+.cover {
+  background: url(../Images/team.jpg) no-repeat center center fixed;
+  min-height: 150px;
+}
+
+/* End Cover Section */
+
+/* Start Section Tool Box */
+
+.option-box {
+  position: fixed;
+  top: 100px;
+  left: 0;
+  z-index: 9999;
+}
+.option-box .color-option {
+  float: left;
+  background: #eee;
+  color: #fff;
+  padding: 10px;
+  width: 200px;
+  display: none;
+}
+.option-box .color-option ul li {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-right: 3px;
+  cursor: pointer;
+}
+.option-box .gear-check {
+  padding: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* End Section Tool Box */
+
+/* Start Section About */
+
+.about {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.about .lead {
+  color: #888;
+  font-size: 25px;
+  margin-top: 15px;
+}
+.about h2 {
+  font-weight: 700;
+}
+
+/* End Section About */
+
+/* Start Section Features */
+.features {
+  background-color: #eee;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.features .h1{
+  color:#1f6d8e;
+}
+.features .feat {
+  margin-bottom: 30px;
+}
+.features .feat p {
+  line-height: 2em;
+}
+.features .feat i {
+  font-size: 50px;
+  margin-bottom: 10px;
+  color: #1f6d8e;
+}
+
+/* End  Section Features */
+
+/* Start Section Testimonials */
+
+.testimonials {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.testimonials .h1 {
+  font-weight: 700;
+}
+.testimonials .lead {
+  line-height: 2em;
+  margin-bottom: 10px;
+}
+.testimonials span {
+  font-size: 18px;
+  font-weight: 700;
+}
+.testimonials .carousel-inner {
+  min-height: 160px;
+}
+.testimonials .carousel-indicators {
+  position: static;
+  width: 100%;
+  margin-left: auto;
+  padding-top: 20px;
+}
+.testimonials .carousel-indicators li {
+  text-indent: 0;
+  width: 80px;
+  height: 80px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 5px;
+}
+.testimonials .carousel-indicators li.active {
+  width: 80px;
+  height: 80px;
+  background-color: none;
+}
+.testimonials .carousel-indicators li img {
+  max-width: 100%;
+}
+
+/* End Section Testimonials */
+
+/* Start Section Price Table */
+.price {
+  background: #fff;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.price .h1{
+  color:#1f6d8e;
+}
+.price .price_box {
+  background: #fff;
+  padding: 10px;
+  border: 3px solid #1f6d8e;
+  margin-bottom: 15px;
+}
+.price .price_box h2 {
+  margin: 5px 0 15px;
+}
+.price .price_box:hover p {
+  -webkit-transform: scale(1.1, 1.1) rotate(360deg);
+  transform: scale(1.1, 1.1) rotate(360deg);
+  border: 2px solid #dfdfdf;
+}
+.price .price_box p {
+  font-size: 35px;
+  font-weight: 700;
+  color: #1f6d8e;
+  width: 100px;
+  height: 100px;
+  background: #f3f3f3;
+  border-radius: 50%;
+  line-height: 100px;
+  border: 2px solid #fff;
+  -webkit-transition-duration: 0.7s;
+  transition-duration: 0.7s;
+}
+.price .price_box ul {
+  line-height: 250%;
+  font-size: 18px;
+}
+.price .price_box a {
+  margin-bottom: 5px;
+}
+
+/* End Section Price Table */
+
+/* Start Section Our Team */
+.our-Team {
+  background-color: #eee;
+  min-height: 500px;
+}
+.our-Team .team {
+  background: rgb(31 109 142);
+  color: #fff;
+  min-height: 500px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.our-Team .person {
+  margin-bottom: 40px;
+}
+
+/* End Section Our Team */
+
+/* Start Section Stats */
+.statistics {
+  background-color: #eee;
+  min-height: 300px;
+}
+.statistics .Data {
+  background: #eee;
+  color: #1f6d8e;
+  min-height: 300px;
+  padding-top: 40px;
+  padding-bottom: 70px;
+}
+.statistics .stats {
+  margin-bottom: 30px;
+}
+.statistics .stats:hover {
+  color: #0583F2;
+}
+.statistics p {
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.statistics span {
+  font-size: 18px;
+}
+/* End Section Stats */
+
+/* Start Section Our SKills */
+.our-skills {
+  padding-top: 40px;
+  padding-bottom: 70px;
+}
+.our-skills .h1 {
+  padding-bottom: 60px;
+  color:#1f6d8e;
+
+}
+.our-skills h3 {
+  font-weight: 700;
+  margin-top: 0;
+}
+.our-skills .progress {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  height: 35px;
+}
+.our-skills .progress-bar {
+  line-height: 35px;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: left;
+  text-indent: 10px;
+}
+.our-skills .blue{
+  background-color: #1F6D8E!important;
+}
+.our-skis .danger{
+  background-color: #17A2B8!important;
+}
+.our-skills .progress-bar-animated {
+  -webkit-animation: progress-bar-stripes 1s linear infinite;
+  animation: progress-bar-stripes 1s linear infinite;
+}
+/* End Section Our SKills */
+
+/* Start Section Contact Us */
+.contact-us {
+  background-color: #eee;
+  min-height: 300px;
+}
+.contact-us .fileds {
+  background: rgb(31 109 142);
+  color: #fff;
+  min-height: 300px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.contact-us p {
+  margin-bottom: 40px;
+}
+.contact-us textarea {
+  height: 155px;
+  margin-bottom: 10px;
+}
+.contact-us input[type="email"],
+.contact-us input[type="tel"],
+.contact-us input[type="text"],
+.contact-us textarea {
+  background-color: #fff;
+  border: none;
+}
+.contact-us input[type="submit"]{
+  width: 25%;
+  margin: 0 auto;
+}
+
+#mail-status {
+  padding: 12px 20px;
+  width: 100%;
+  display: none;
+  font-size: 1em;
+  font-family: "Georgia", Times, serif;
+  color: #FFF;
+}
+
+.contact-us .sub {
+  background-color: #17a2b8;
+  border-color: #17a2b8;
+}
+.contact-us .sub:hover {
+  background-color: #0084ff;
+  border-color: #007bff;
+}
+
+/* End Section Contact Us */
+
+/* Start Section Our Clients */
+.our-client {
+  background-color: #eee;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.our-client img {
+  opacity: 0.7;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.our-client img:hover {
+  opacity: 1;
+}
+/* End Section Our Clients */
+
+/* -Start Section Footer */
+.footer {
+  background: #333;
+  color: #aaa;
+  padding-top: 10px;
+}
+.footer a {
+  color: #aaa;
+}
+.footer a:hover {
+  color: #fff;
+}
+.footer h3 {
+  letter-spacing: 1px;
+  margin: 30px 0 20px;
+}
+.footer .three-columns {
+  overflow: hidden;
+}
+.footer .three-columns li {
+  width: 33.33333333%;
+  float: left;
+  padding: 5px 0;
+}
+.footer .social-list {
+  overflow: hidden;
+  margin: 20px 0 10px;
+}
+.footer .social-list li {
+  float: left;
+  margin-left: 3px;
+  opacity: 0.7;
+}
+.footer .social-list li:hover {
+  opacity: 1;
+}
+.footer .last-art {
+  margin-top: 15px;
+}
+.footer .img-thumbnail {
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid #444;
+  margin-bottom: 5px;
+}
+.footer .copyRight {
+  background: #333;
+  color: #aaa;
+  padding: 15px 0;
+  margin-top: 30px;
+  font-size: 18px;
+}
+.footer .copyRight span {
+  font-size: 25px;
+}
+.footer .copyRight i {
+  color: #e41b17;
+}
+/* -End Section Footer */
+
+/* Start Section Loading */
+.loading-overlay {
+  background: #222;
+  color: #fff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+}
+.spinner {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  margin: 300px auto;
+}
+.double-bounce1,
+.double-bounce2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-animation: bounce 2s infinite ease-in-out;
+  animation: bounce 2s infinite ease-in-out;
+}
+.double-bounce2 {
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s;
+}
+@-webkit-keyframes bounce {
+  0%,
+  100% {
+    -webkit-transform: scale(0);
+  }
+  50% {
+    -webkit-transform: scale(1);
+  }
+}
+@keyframes bounce {
+  0%,
+  100% {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+}
+/* End Section Loading */
+
+/* Start Section Scroll To Top */
+.scroll-up {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+  position: fixed;
+  right: 15px;
+  bottom: 10px;
+  z-index: 9999;
+  cursor: pointer;
+  display:none;
+} 
+/*End Section Scroll To Top */
+
+/* Start Grouping System */
+.contact-us,
+.our-Team,
+.statistics {
+  background-size: cover;
+}
+.features .h1,
+.our-Team .h1,
+.price .h1,
+.statistics .h1,
+.subscribe .h1,
+.testimonials .h1 {
+  margin-bottom: 50px;
+}
+.carousel-item,
+.footer .social-list li,
+.our-client img,
+.statistics .stats,
+.testimonials .carousel-indicators li {
+  -webkit-transition: all 1s ease-in-out;
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+}
+
+/*End Section Scroll To Top */
